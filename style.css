@@ -1,0 +1,399 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    padding-right: 90px;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*reset*/
+li{ list-style: none; }
+a{ color: inherit; text-decoration: none;}
+img{vertical-align: top;}
+
+/*common*/
+body{ font-family: "Noto Sans KR"; font-size: 16px; }
+.wrap{ margin: 0 auto; width: 93%; position: relative; padding-right: 80px; }
+.blind{ position: absolute; left: -999px; font-size: 0px; overflow: hidden; }
+.wrap:after, ul:after, .cl:after{ content: ""; display: block; clear: both; }
+
+/*header*/
+header{height: 142px; position: absolute; width: 100%; z-index: 2; }
+header div ul li{ float: left; }
+header .th{ border-bottom: 1px solid #fff; position: relative; }
+header .th .tnb{ width: 400px; display: inline-block;}
+header .th .tnb li{ width: 25%; line-height: 40px; text-align: center; font-size: 14px; }
+header .th .tnb li a{ color: #fff; }
+header .th .tnb .select{background:#006224; }
+
+header .th .lang{position: absolute; top:0px; right: 0; line-height: 40px; width: 240px; }
+header .th .lang li {width: 60px; text-align: center; font-size: 14px;}
+header .th .lang .select{visibility: hidden;}
+header .th .lang li a{ color: #fff; }
+
+header .mh{position: relative;}
+header .mh h1{height: 100px;padding-top: 17px; box-sizing: border-box;}
+header .mh .gnb{ position: absolute; top: 41px; right: 18%; }
+header .mh .gnb li{ margin-left: 60px; color: #fff; font-size: 18px; }
+
+header .mh .menu { position: absolute; top: 33px; right: 0;}
+header .mh .menu li { margin-left: 20px; border-radius: 20px; padding: 10px; box-sizing: border-box; border: 1px solid #fff; color: #fff;}
+header .mh .menu li a img { margin-left: 10px;}
+
+/*메인 비쥬얼 배너 영역*/
+#main{ background: url(../images/main.png) no-repeat center; height: 900px; }
+
+/*검색창*/
+#main .search{ position: relative; top:240px;  border-radius: 40px; border: 3px solid #006224; width: 500px; height: 50px; background: #fff;}
+#main .search .ss{ margin-left: 20px; padding: 0 40px 0 80px; line-height: 48px; border: none; appearance:none; font-size: 16px;
+background-image:url(../images/arr_under.png), url(../images/logo_eng.png);
+background-repeat: no-repeat, no-repeat;
+background-position: right, left;}
+
+#main .search .st{padding-left: 34px; border: none; font-size: 16px; line-height: 48px; }
+#main .search .sb{display: inline-block; } 
+#main .search .sb img{position: relative; top:-6px;} 
+
+
+/*호원 핫이슈 영역*/
+#main .hot{ position: relative; top: 400px; height: 240px; }
+#main .hot:before{ content: ""; display: block; height: 3px; width: 100%; background: #fff; position:relative; z-index: 2; }
+#main .hot > h2{ font-size: 20px; width: 280px; height: 45px; background: url(../images/pen.png) no-repeat center;  text-align: center; line-height: 40px; font-weight: 600; position: absolute; top: -100px; left: 0; }
+#main .hot > h2 a span{ font-size: 24px; color: #d31045; }
+#main .hot article{float: left; width: 25%; display: inline-block; color: #fff; margin-top: 30px;}
+#main .hot article:nth-child(2):before{ content: ""; display: block; width: 10px; height: 10px; border-radius: 50%; background: #fff; position: relative; top: -36px; }
+#main .hot article:nth-child(3):before{ content: ""; display: block; width: 10px; height: 10px; border-radius: 50%; background: #fff; position: relative; top: -36px;  }
+#main .hot article:nth-child(4):before{ content: ""; display: block; width: 10px; height: 10px; border-radius: 50%; border: 3px solid #006224; background: #fff; position: relative; top:-59px; left: -7px; z-index: 4; }
+
+#main .hot .select{ margin-top: 30px; padding: 20px 0 60px 0; width:600px; background: rgba(0,0,0,0.6); border-radius: 10px; box-sizing: border-box; word-break: keep-all; text-align: center; }
+#main .hot .select h3{font-size: 30px; line-height: 1.4;margin-bottom: 30px; }
+#main .hot .select p{line-height: 1.4; }
+#main .hot>a{ position: absolute; top: -17px; right: -1px; z-index: 3; }
+
+/*바로가기 아이콘*/
+#main .icon{ position: absolute; top: 296px; right:6%; }
+#main .icon li{ float: left; }
+#main .icon a{ display: inline-block; margin-left: 10px; }
+#main .icon a img{height: 100px; }
+
+/*퀵메뉴*/
+#main .quick{ color: #fff; position: fixed; right: 0; top: 0; width: 90px; height: 100%; background: #333; z-index: 999; text-align: center; }
+#main .quick .qtit{ background: url(../images/quick.png) no-repeat center; width: 100%; height: 206px; }
+#main .quick .qtit p{ font-size: 18px; padding-top: 36px; }
+#main .quick .qtit p:first-child:after { content: ""; display: block; width: 1px; height: 25px; background: #fff; position: relative; top: 22px; left: 50%; }
+#main .quick .qtit .stit{ font-size: 16px; }
+
+#main .quick .pqlist li{ font-size: 14px; color: #fff; height: 84px; line-height: 1.2; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #444; }
+#main .quick .pqlist .top{ height: 50px; }
+#main .quick .pqlist li a{ display: block; }
+#main .quick .pqlist li a img{ margin-bottom: 10px; }
+
+
+/*인사이드 호원 영역*/
+#inside h2{ margin-top: 100px; font-size: 30px; font-weight: bold; text-align: center; }
+#inside .notice{width: 50%; height: 100%; float:left; box-sizing: border-box;}
+#inside .notice .button{ margin-top: 70px; float: left; height: 450px; width: 60%; position: relative; box-sizing: border-box; }
+#inside .notice .button .but{ float:left; width: 20%; height: 60px; line-height: 60px; text-align: center; box-sizing: border-box; border-bottom: 2px solid #006224; }
+#inside .notice .button .but input{ font-size: 18px; border: none; background: none;text-align: center; font-weight: 600; }
+#inside .notice .button .but > .notice1{position: absolute; left: 0; text-align: left; width: 100%; height: 320px; border-bottom: 2px solid #006224;  }
+#inside .notice .button .but > .notice1 > li{ height: 40px; box-sizing: border-box; padding-left: 30px; }
+#inside .notice .button .but > .notice1 > li:before{ content:"-";  position: relative; top: -14px; left: -15px; }
+#inside .notice .button .select > input { color: #006224; }
+#inside .notice .button .but > .notice1 > li > a{ display: inline-block; max-width:85%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 16px;color: #444; font-weight: 300; line-height: 40px; }
+
+#inside .notice .sday{width: 40%; float: left; height: 450px; position: relative; padding: 0 30px 0 30px; box-sizing: border-box;  margin-top: 70px;  }
+#inside .notice .sday h3{ font-weight: 600; font-size: 18px; line-height: 60px; height: 60px; color: #006224; border-bottom: 2px solid #006224; padding-left: 30px; box-sizing: border-box; }
+#inside .notice .sday > .plus{ display: inline-block; position: absolute; top: 21px; right: 50px; }
+#inside .notice .sday > ul{ border-bottom: 2px solid #006224; height: 320px;  }
+#inside .notice .sday > ul >li{ border-bottom: 1px solid #006224; height: 80px; position: relative; padding: 10px 0 0 20px; box-sizing: border-box;}
+#inside .notice .sday > ul >li>em{ font-weight: 900; font-size: 28px; }
+#inside .notice .sday > ul >li>em span{ font-weight: 300; font-size: 14px; color: #666;}
+#inside .notice .sday > ul >li>p{ position: absolute; top:20px; left:100px;}
+
+#inside .notice .news{ position: relative; padding-right: 30px; box-sizing: border-box; float: left;width: 100%; }
+#inside .notice .news h3{ width: 100%; height: 60px; line-height: 60px; font-weight: 600; font-size: 18px; color: #006224; border-bottom: 2px solid #006224; padding-left: 30px; box-sizing: border-box; }
+#inside .notice .news h3 a{ line-height: 60px; }
+#inside .notice .news > a{ display: inline-block; position: absolute; top: 21px; right: 50px; }
+#inside .notice .news > ul li{ width: 33.3%; float: left; margin-top: 30px; display: flex; justify-content: center; align-items: center; }
+#inside .notice .news > ul li p{ font-size: 14px; width: 200px; text-align: center; margin-top: 20px; line-height: 1.4; word-break: keep-all; }
+
+#inside .inside{ width: 50%; float: right; margin-top: 70px; position: relative; }
+#inside .inside > a> img{width: 100%; height: 100%; }
+
+#inside .inside .mside{ background: url(../images/minside.png) no-repeat center; width: 270px; height: 300px; position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; z-index: 2; }
+#inside .inside .mside h3{color: #fff; font-weight: 600; font-size: 30px; text-align: center; line-height: 1.4; }
+
+#inside .inside .nav{ width: 270px; height: 100%; background: rgb(0,0,0,0.6); position: absolute; top: 0; left: 0; color: #fff; text-align: center; }
+#inside .inside .nav p{ margin-top: 420px; line-height: 1.4; font-size: 18px; }
+#inside .inside .nav span{ display: block; margin-top: 40px; }
+
+#inside .inside .arr{display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; margin-top: 120px; }
+#inside .inside .arr li{float: left; width: 20%; height: 54px; display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; }
+
+
+
+/*미디어 호원 영역*/
+#media .wrap h2{ margin-top: 100px; font-size: 30px; font-weight: bold; text-align: center; margin-bottom: 70px;  }
+#media .media{ background: #ddd; height: 720px; }
+#media .media .mlist{ background: url(../images/midea_bg.png) no-repeat left/cover; height: 720px; width: 20%; box-shadow: 1px 0px 5px #aaa; padding-left: 50px; box-sizing: border-box; float: left; }
+#media .media .mlist p { margin-top: 20px; width: 80%; color: #fff; font-weight: 300; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#media .media .mlist h3 { padding-top: 40px; margin-top: 40px; font-weight: 400; font-size: 20px; color: #fff; line-height: 60px; }
+#media .media .mlist h3:nth-child(6) { margin-top: 100px; }
+#media .media .mlist h3:after{ content: ""; display: block; height: 1px; width: 150px; background: #fff; }
+
+#media .media #video{float: left; width: 80%; height: 55%; display: flex; justify-content: center; align-items: center; position: relative; }
+#media .media #video iframe{ width: 40%; display: block; float: left; }
+#media .media #video iframe:nth-child(1){ margin-right: 5%; }
+#media .media #video > a{ display:block; position: absolute; top: 50%-22px; right: 3%;}
+
+#media .media #gall{ float: left; width: 80%; height: 45%; display: flex; justify-content: center; align-items: center; border-top: 1px dotted #333; position: relative;}
+#media .media #gall ul { width: 100%; box-sizing: border-box; float: left; display: flex; justify-content: center; align-items: center;}
+#media .media #gall ul li{ float: left; margin-left: 5%; width: 25%; }
+#media .media #gall ul li:nth-child(4){ margin-right: 5%; }
+#media .media #gall ul li a img{ width: 100%; }
+
+/* 비전2030 영역 */
+#vision { background: url(../images/vision_bg.png) no-repeat center/cover; height: 720px; margin-top: 100px; }
+#vision h2{ padding-top: 80px; color: #fff; font-size: 36px; font-weight: bold; text-align: center; }
+#vision .wrap > a { position: absolute; top: 81px; right: 150px; }
+#vision div{ margin-top: 80px; }
+#vision div article{ box-sizing: border-box; }
+#vision div article h3{ color: #fff; font-size: 30px; font-weight: 400; }
+#vision div article p{ margin-top: 20px; line-height: 20px; color: #fff; font-size: 16px; font-weight: 300; }
+
+#vision .vision1{float: left; width: 46%; padding: 0 10px; box-sizing: border-box; }
+#vision .vision1 article {float: left; width: 40%; padding: 70px 0 0 0; }
+#vision .vision1 article:before { content: ""; display: block; height: 10px; width: 400px; background: #006224; position: relative; top: -70px; right: 37px;}
+#vision .vision1 img {float: right; width: 50%;  }
+
+#vision .vision2{float: left; width: 46%; padding: 0 10px; box-sizing: border-box; position: relative; }
+#vision .vision2 article { padding-left: 50px;float: left; width: 40%; }
+#vision .vision2 article:after { content: ""; display: block; height: 10px; width: 368px; background: #006224; position: relative; top: 256px; right: -389px;}
+#vision .vision2 img:nth-child(2) {float: right; width: 50%; }
+#vision .vision2 img:nth-child(3) {position: absolute; top: 300px; left: 300px; width: 20%; }
+#vision .vision2 img:nth-child(4) {position: absolute; top: 200px; left: 200px; width: 20%; }
+
+
+/*푸터영역*/
+footer { margin-top: 100px; padding: 20px 0; height: 120px; border-top:2px solid #006224; }
+footer .wrap > img{ padding-top: 40px; line-height: 120px; }
+footer address{ line-height: 1.6; position: absolute; top:20px; left:220px; }
+footer #ql { position: absolute; top: 16px; right: 4%; width: 145px; }
+footer .sns{ position: absolute; top: 50px; right: 4%; vertical-align: middle; }
+
+
+/*모바일*/
+
+@media (max-width:800px) { /* 모바일용 */
+    .pc{ display: none !important;}
+    body{ font-size: 14px; padding: 0; }
+    .wrap{width: 94%; padding-right: 0px; }
+    
+    /*header*/
+    header{height: 80px; position: static; width: 100%; }
+    header div ul li{ float: left; }
+    header .mh h1{ padding: 20px 0 0 ; text-align: center; box-sizing: none; }
+    header .mh > .mm{ position: absolute; top: 20px; right: 0; border-radius: 50px; display: block; width: 40px; height: 40px; background: #006224; display: flex; justify-content: center; align-items: center;}
+    header .mh > .msb{ position: absolute; top: 24px; left: 0; }
+    header .mh h1 a img{ height: 40px;}
+
+    /*메인 비쥬얼 배너 영역*/
+    #main{ width: 100%; background: url(../images/main.png) no-repeat center/cover; height: 680px; position: relative; }
+
+    /*검색창*/
+    
+    /*호원 핫이슈 영역*/
+    #main .hot{ width: 100%; position: relative; top: 120px; height: 200px; }
+    #main .hot:before{ content: none; display: none; position:static;}
+    
+    #main .hot > h2{ top:-78px; font-size: 18px; width: 100%; line-height: 36px; }
+    #main .hot > h2 a span{ font-size: 22px; }
+    
+    #main .hot article{float: none; width: 100%; display: none; margin-top: 0px;}
+    #main .hot article:nth-child(4):before{ content: none;}
+    
+    #main .hot .select{ display: block; margin-top: 0px; padding: 40px; height: 100%; width: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; }
+    #main .hot .mselect h3{font-size: 22px; line-height: 1.4; margin-bottom: 0px; }
+	
+    #main .hot > .swip{ padding: 0; width: 100%; text-align: center; position: absolute; bottom: 5%; left: 0; }
+    #main .hot > .swip > li{ padding: 0; width: 11px; height: 11px;border-radius: 100%; background: #fff; display: inline-block; }
+    #main .hot > .swip > .select{ background: #006224; }
+    
+
+    /*바로가기 아이콘*/
+    #main .icon{width: 100%; text-align: center; top: 360px; right: 0; }
+    #main .icon li{ float: left; width: 33.3%; }
+    #main .icon a{ display: inline-block; float: none; margin: 0; }
+    #main .icon a:last-child{margin: 0; }
+    #main .icon a img{height: 90%; width: 90%;}
+    
+    /*퀵메뉴*/
+    #main .mqlist{ width: 100%; height: 180px; background: url(../images/midea_bg.png) no-repeat center/cover; position: absolute; bottom: 0; width: 100%; height: 180px; }   
+    #main .mqlist li{ width: 25%; color: #fff; float: left; font-size: 14px; height: 90px; line-height: 1.2; display: block; text-align: center; display: flex; justify-content: center; align-items: center;box-sizing: border-box; }
+    #main .mqlist li a{ display: block; }
+    #main .mqlist li a img{ height: 24px; margin-bottom: 10px; }
+    
+    /*인사이드 호원 영역*/
+    /*공지부분*/
+    #inside h2{ margin-top: 70px; font-size: 24px;}
+    #inside .notice{width: 100%;float:none;}
+    #inside .notice .button{ margin-top: 40px; float: none; height: 460px; width: 100%; position: relative; box-sizing: border-box; }
+    #inside .notice .button .but input{ font-size: 16px;}
+    #inside .notice .button .but > .notice1{position: absolute; left: 0; text-align: left; width: 100%; height: 400px; border-bottom: 2px solid #006224; background: #f6f6f6;   }
+    #inside .notice .button .but > .notice1 > li{ height: 50px; }
+    #inside .notice .button .but > .notice1 > li:before{top: -20px; }
+    #inside .notice .button .but > .notice1 > li > a{ max-width:90%; font-size: 14px;color: #333; line-height: 50px; }
+    
+    /*학사일정*/
+    #inside .notice .sday{width: 100%; float:none; height: 300px; padding: 0px; margin-top: 40px; }
+    #inside .notice .sday h3{font-size: 16px; padding-left: 20px;}
+    #inside .notice .sday > .plus{top: 23px; right: 20px; }
+    #inside .notice .sday > ul{ height: 240px; }
+    #inside .notice .sday > ul >li{ padding-top: 10px;}
+
+    /*호원 뉴스 영역*/
+    #inside .notice .news{padding-right: 0px; margin-top: 40px; float: none; width: 100%; }
+    #inside .notice .news h3{ width: 100%; font-size: 16px; padding-left: 20px;display: block; margin-bottom: 20px; }
+    #inside .notice .news h3 a{ line-height: 60px; }
+    #inside .notice .news > a{ display: block; position: absolute; top: 21px; right: 20px; }
+    
+    #inside .notice .news > .mnews{ width: 100%;}
+    #inside .notice .news > .mnews > a img{ width: 46%; float: left;}
+    #inside .notice .news > .mnews > a> article{ width: 50%; height: 100%; float: right; }
+    #inside .notice .news > .mnews > a> article h4 { width: 100%; height: 20%; font-size: 14px; line-height: 1.4; word-break:keep-all; font-weight: bold; text-align: center; display: flex; justify-content: center; align-items: center}
+    #inside .notice .news > .mnews >a> article p { font-size: 12px; width: 100%; height: 80%; line-height: 1.3; word-break: break-all; overflow: hidden; text-overflow: ellipsis; text-align: left; margin-top: 20px; display: block; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient:vertical;}
+    
+    /*인사이드 이미지영역*/
+    #inside .inside{ width: 100%; float:none; margin-top: 40px;position: relative; }
+
+    #inside .inside .mside{ background: url(../images/minside.png) no-repeat center/cover; width: 40%; height: 40%; }
+    #inside .inside .mside h3{color: #fff; font-weight: 600; font-size: 24px; text-align: center; line-height: 1.4; }
+
+    #inside .inside .nav{ width: 40%; height: 100%;}
+    #inside .inside .nav p{ margin-top: 140%; line-height: 1.4; font-size: 14px; }
+    #inside .inside .nav span{ display: block; margin-top: 40px; }
+    #inside .inside >.mob{position: absolute; bottom: 10px; right: 10px;}
+    #inside .inside >.mob > li{ float: left; padding: 0px; color: #fff; font-size: 12px; text-align: center;}
+    #inside .inside >.mob li a img{ height: 40%; width: 40%; margin-bottom: 10px;}
+
+    /*미디어 호원*/
+    #media .wrap h2{ margin-top: 70px; font-size: 24px; margin-bottom: 40px;  }
+    #media .media{ background: url(../images/midea_bg.png) no-repeat left/cover; height: 400px; }
+    
+    #media .media .video{float: none; width: 100% }
+    #media .media .video h3{color: #fff; font-weight: 600; font-size: 24px; text-align: center; line-height: 1.4; padding: 20px 0; border-bottom: 1px solid #aaa; }
+    #media .media .video iframe{float: none; margin: 20px 0; width: 100%; height: 200px; }
+    #media .media .video iframe:last-child{ margin-right: 0px; margin-top: 10px; }
+
+    #media .media .gall h3{color: #fff; font-weight: 600; font-size: 24px; text-align: center; line-height: 1.4; padding: 20px 0; border-bottom: 1px solid #aaa;}
+
+    
+    /* 비전2030 영역 */
+    #vision {height: 100%; margin-top: 70px; padding: 20px 0 40px;  }
+    #vision h2{ padding-top: 0px; font-size: 26px; }
+    #vision div{ margin-top: 30px; }
+    #vision div article h3{ font-size: 16px; }
+    #vision div article p{ margin-top: 10px; line-height: 10px; font-size: 13px;}
+
+    #vision .vision1{float: none; width: 100%; height: 100%; padding: 20px; background: rgb(0,0,0,0.4); }
+    #vision .vision1 article { width: 100%; padding: 0px; box-sizing: border-box; margin-bottom: 20px;}
+    #vision .vision1 article:before {width: 100%; position: static; margin-bottom: 20px; }
+    #vision .vision1 article h3 { width: 100%; text-align: center; margin-bottom: 20px; }
+    #vision .vision1 article p {width: 100%; padding-left: 10px; word-break: keep-all; }
+    #vision .vision1 article p:before { content: "-"; display: block; position: relative; top:11px; left: -10px; }
+    #vision .vision1 img {float: none; width: 100%; border-radius: 10px; }
+
+    #vision .vision2{float: none; width: 100%; padding: 20px; height: 100%; background: rgb(0,0,0,0.4);}
+    #vision .vision2 article { height: 100%; padding:0 0 0 0px; float: right; width: 100%; box-sizing: border-box;}
+    #vision .vision2 article:after { display: none;}
+    #vision .vision2 article:before { margin-bottom: 20px; content: ""; display: block; height: 10px; width: 100%; background: #006224;}
+    #vision .vision2 article h3 { width: 100%; text-align: center; margin-bottom: 20px; }
+    #vision .vision2 article p { word-break: keep-all; padding-left: 30px;  width: 100%; margin-bottom: 20px;}
+    #vision .vision2 article p:before { content: "-"; display: block; position: relative; top:11px; left: -10px; }
+    #vision .vision2 img:nth-child(2) {float: none; width: 100%; border-radius: 10px; }
+    #vision .vision2 img:nth-child(3) {display: none;}
+    #vision .vision2 img:nth-child(4) {display: none;}
+
+
+        /*푸터영역*/
+    footer { margin-top: 70px; padding: 20px 0; height: 120px;  }
+    footer .wrap > img{ padding-top: 0px; width: 40%; float: left; }
+    footer address{ line-height: 1.4; position: static; font-size: 10px; width: 58%; float: right; text-align: right; padding-top: 0px; }
+    footer p{ line-height: 1.4;font-size: 10px; width: 100%; text-align: right; padding-top: 16%; }
+    footer #ql { position: static; width: 40%; margin-top: 20px; }
+    footer .sns{ position: static; margin-top: 20px; width: 100%;}
+     footer .sns a img{ height: 30px; vertical-align: middle;  }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+@media (min-width:801px) { /* PC용 */
+    .mob{ display: none;}
+    
+    
+    
+    
+} 
+
+
+
+
+
+
